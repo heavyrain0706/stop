@@ -1,0 +1,52 @@
+//vars
+$mw: 1280px;
+$media1: $mw + 12px;
+$media2: 992px;
+$media3: 768px;
+$media4: 480px;
+
+
+.header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    // .header__home
+
+    &__home {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    // .header__logo
+
+    &__logo {
+        margin: 0 10px 0 0;
+    }
+
+    // .header__donate
+
+    &__donate {
+        padding: 20px 40px;
+        color: #fff;
+        border: 2px solid #DC2F30;
+        background-color: #DC2F30;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.2s, color 0.2s, border 0.2s;
+            &:hover {
+                background-color: #fff;
+                color: #DC2F30;
+                border: 2px solid #fff;
+            }
+    }
+}
