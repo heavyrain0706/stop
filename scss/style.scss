@@ -68,8 +68,16 @@ $media4: 480px;
         font-weight: 900;
         font-size: 100px;
         text-transform: uppercase;
+        text-align: center;
         color: #fff;
         margin: 0 0 10px 0;
+        @media (max-width: $media2) {
+            font-size: 60px;
+        }
+        @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    font-size: 50px;
+        }
     }
 
     // .mainblock__blood
@@ -84,6 +92,32 @@ $media4: 480px;
                 top: -25px;
                 left: 0;
             }
+            @media (max-width: $media2) {
+                font-size: 60px;
+                &::after {
+                    top: -60px;
+                    left: -20px;
+                }
+             }
+            @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    &::after {
+                        top: -70px;
+                        left: -40px;
+                    }
+            }
+            @media (max-width: 600px) {
+                &::after {
+                    top: -55px;
+                    left: -50px;
+                }
+             }
+            @media (max-width: $media4) {
+                &::after {
+                    top: -65px;
+                    left: -60px;
+                }
+             }
     }
 
     // .mainblock__subtitle
@@ -93,8 +127,16 @@ $media4: 480px;
         font-weight: 700;
         font-size: 65px;
         text-transform: uppercase;
+        text-align: center;
         color: #fff;
         margin: 0 0 10px 0;
+        @media (max-width: $media2) {
+            font-size: 45px;
+        }
+        @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    font-size: 35px;
+        }
     }
 
     // .mainblock__text
@@ -108,6 +150,13 @@ $media4: 480px;
         width: 60%;
         text-align: center;
         margin: 0 0 20px 0;
+        @media (max-width: $media2) {
+            font-size: 16px;
+        }
+        @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    font-size: 14px;
+        }
     }
 
     // .mainblock__link
@@ -128,6 +177,15 @@ $media4: 480px;
                 color: #DC2F30;
                 border: 2px solid #fff;
             }
+            @media (max-width: $media3) {
+                padding: 15px 20px;
+                font-size: 14px;
+            }
+            @media screen and (max-width: $media1)
+            and (max-height: 800px) {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
     }
 
     // .mainblock__arrow
@@ -136,6 +194,10 @@ $media4: 480px;
         margin: 40px 0 0 0;
         animation: arrow 2s infinite ease;
         position: relative;
+        @media screen and (max-width: $media1)
+        and (max-height: 800px) {
+            margin: 30px 0 0 0;
+        }
 
         @keyframes arrow {
             0%{top: -10px;}
@@ -154,6 +216,13 @@ $media4: 480px;
 .cities {
     padding: 60px 0;
     background: url('../img/cities/background.png') center / cover no-repeat;
+    @media (max-width: $media2) {
+        padding: 40px 0;
+    }
+    @media screen and (max-width: $media1)
+            and (max-height: 800px) {
+                padding: 40px 0;
+    }
     
     // .cities__header-block
 
@@ -171,6 +240,19 @@ $media4: 480px;
         margin: 0 auto 20px auto;
         color: #fff;
         width: 75%;
+        @media (max-width: $media2) {
+            font-size: 45px;
+        }
+        @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    font-size: 45px;
+        }
+        @media (max-width: $media3) {
+            font-size: 35px;
+        }
+        @media (max-width: $media4) {
+            font-size: 25px;
+        }
     }
 
     // .cities__subtitle
@@ -181,6 +263,19 @@ $media4: 480px;
         font-size: 40px;
         color: #DC2F30;
         text-align: center;
+        @media (max-width: $media2) {
+            font-size: 45px;
+        }
+        @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    font-size: 30px;
+        }
+        @media (max-width: $media3) {
+            font-size: 25px;
+        }
+        @media (max-width: $media4) {
+            font-size: 18px;
+        }
     }
 
     // .cities__cards
@@ -188,6 +283,9 @@ $media4: 480px;
     &__cards {
         display: flex;
         justify-content: space-between;
+        @media (max-width: $media3) {
+            flex-wrap: wrap;
+        }
     }
 
     // .cities__card
@@ -204,6 +302,15 @@ $media4: 480px;
             bottom: 0;
             background: linear-gradient(180deg,rgba(22, 22, 22, 0) 0%, #161616 95%, );
             z-index: 2;
+        }
+        @media (max-width: $media3) {
+            flex: 0 1 48%;
+            margin: 0 0 20px 0;
+        }
+        @media (max-width: $media4) {
+            flex: 0 100%;
+            display: flex;
+            flex-direction: column;
         }
     }
 
@@ -228,6 +335,18 @@ $media4: 480px;
         font-size: 30px;
         color: #fff;
         margin: 0 0 10px 0;
+        @media (max-width: $media1) {
+            font-size: 26px;
+            font-weight: 600;
+        }
+        @media (max-width: $media2) {
+           font-size: 24px;
+        }
+        @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    font-size: 24px;
+        }
+
     }
 
     // .card__text
@@ -238,6 +357,15 @@ $media4: 480px;
         font-size: 20px;
         color: #fff;
         margin: 0 0 10px 0;
+        text-align: center;
+        white-space: nowrap;
+        @media (max-width: $media2) {
+            font-size: 16px;
+         }
+         @media screen and (max-width: $media1)
+                 and (max-height: 800px) {
+                     font-size: 16px;
+         }
     }
 
     // .card__label
@@ -248,6 +376,7 @@ $media4: 480px;
         font-size: 20px;
         color: #DC2F30;
         position: relative;
+        text-align: center;
         &::after {
             position: absolute;
             content: url('../img/cities/destroyed.png');
@@ -262,6 +391,13 @@ $media4: 480px;
 .next {
     background: url('../img/next/background.png') center / cover no-repeat;
     padding: 180px 0;
+    @media (max-width: $media2) {
+        padding: 40px 0;
+    }
+    @media screen and (max-width: $media1)
+            and (max-height: 800px) {
+                padding: 40px 0;
+    }
 
     // .next__content
 
@@ -271,6 +407,9 @@ $media4: 480px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media (max-width: $media3) {
+          width: 100%;
+        }
     }
 
     // .next__title
@@ -282,6 +421,20 @@ $media4: 480px;
         color: #fff;
         margin: 0 0 40px 0;
         text-align: center;
+        @media (max-width: $media2) {
+            font-size: 45px;
+        }
+        @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    font-size: 45px;
+        }
+        @media (max-width: $media3) {
+            font-size: 35px;
+            margin: 0 0 20px 0;
+        }
+        @media (max-width: $media4) {
+            font-size: 25px;
+        }
     }
 
     // .next__text
@@ -293,6 +446,14 @@ $media4: 480px;
         color: #fff;
         text-align: center;
         margin: 0 0 40px 0;
+        @media (max-width: $media2) {
+            font-size: 18px;
+            margin: 0 0 20px 0;
+        }
+        @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    font-size: 18px;
+        }
     }
 
     // .next__link
@@ -313,6 +474,15 @@ $media4: 480px;
                 color: #DC2F30;
                 border: 2px solid #fff;
             }
+            @media (max-width: $media3) {
+                padding: 15px 20px;
+                font-size: 14px;
+            }
+            @media screen and (max-width: $media1)
+            and (max-height: 800px) {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
     }
 }
 
@@ -320,6 +490,13 @@ $media4: 480px;
 .donations {
     background-color: #161616;
     padding: 60px 0;
+    @media (max-width: $media2) {
+        padding: 40px 0;
+    }
+    @media screen and (max-width: $media1)
+            and (max-height: 800px) {
+                padding: 40px 0;
+    }
 
     // .donations__header-block
 
@@ -339,6 +516,19 @@ $media4: 480px;
         color: #fff;
         margin: 0 0 30px 0;
         text-align: center;
+        @media (max-width: $media2) {
+            font-size: 45px;
+        }
+        @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    font-size: 45px;
+        }
+        @media (max-width: $media3) {
+            font-size: 35px;
+        }
+        @media (max-width: $media4) {
+            font-size: 25px;
+        }
     }
 
     // .donations__subtitle
@@ -348,6 +538,19 @@ $media4: 480px;
         font-weight: 700;
         font-size: 40px;
         color: #DC2F30;
+        @media (max-width: $media2) {
+            font-size: 45px;
+        }
+        @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    font-size: 30px;
+        }
+        @media (max-width: $media3) {
+            font-size: 25px;
+        }
+        @media (max-width: $media4) {
+            font-size: 18px;
+        }
     }
 
     // .donations__content
@@ -366,6 +569,12 @@ $media4: 480px;
         flex-direction: column;
         align-items: center;
         margin: 0 0 60px 0;
+        @media (max-width: $media3) {
+            flex: 0 1 47%;
+        }
+        @media (max-width: 600px) {
+            flex: 0 1 100%;
+        }
     }
 
     // .donations__media
@@ -410,6 +619,13 @@ $media4: 480px;
 .help {
     background: url('../img/help/background.png') center / cover no-repeat;
     padding: 250px 0;
+    @media (max-width: $media2) {
+        padding: 80px 0;
+    }
+    @media screen and (max-width: $media1)
+            and (max-height: 800px) {
+                padding: 80px 0;
+    }
 
     // .help__content
 
@@ -419,6 +635,9 @@ $media4: 480px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media (max-width: $media3) {
+            width: 100%;
+        }
     }
 
     // .help__title
@@ -430,6 +649,21 @@ $media4: 480px;
         color: #DC2F30;
         margin: 0 0 40px 0;
         text-align: center;
+        @media (max-width: $media2) {
+            font-size: 45px;
+            margin: 0 0 20px 0;
+        }
+        @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    font-size: 45px;
+                    margin: 0 0 20px 0;
+        }
+        @media (max-width: $media3) {
+            font-size: 35px;
+        }
+        @media (max-width: $media4) {
+            font-size: 25px;
+        }
     }
 
     // .help__text
@@ -442,6 +676,14 @@ $media4: 480px;
         text-align: center;
         margin: 0 0 40px 0;
         width: 75%;
+        @media (max-width: $media2) {
+            font-size: 18px;
+            margin: 0 0 20px 0;
+        }
+        @media screen and (max-width: $media1)
+                and (max-height: 800px) {
+                    font-size: 18px;
+        }
     }
 
     // .help__link
@@ -461,6 +703,15 @@ $media4: 480px;
                 background-color: #fff;
                 color: #DC2F30;
                 border: 2px solid #fff;
+            }
+            @media (max-width: $media3) {
+                padding: 15px 20px;
+                font-size: 14px;
+            }
+            @media screen and (max-width: $media1)
+            and (max-height: 800px) {
+                padding: 10px 20px;
+                font-size: 14px;
             }
     }
 }
